@@ -1,0 +1,22 @@
+<form action="index.php?page=notes&amp;action=detail&amp;id=[@id]" method="post">
+    <ul>
+        <li>
+            <label>ID</label>
+            <input type="text" value="[@id]" disabled>
+        </li>
+        <li>
+            <label>Date</label>
+            <input type="text" value="[@date]" disabled>
+        </li>
+        <li>
+            <label>Author</label>
+            <input type="text" value="[@author]" disabled>
+        </li>
+        <li>
+            <label>Note</label>
+            <textarea name="contents">[@content]</textarea>
+        </li>
+    </ul>
+    <input type="submit" value="Update">
+    <button type="button" onclick="location.href= 'index.php?page=notes&amp;action=remove&amp;id=[@id]'">Delete</button>
+</form>

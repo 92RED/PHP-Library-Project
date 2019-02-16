@@ -1,0 +1,22 @@
+
+<a href="index.php?page=account&amp;action=logout">Logout</a>
+
+<h3>[@username]'s profile</h3>
+
+<form action="index.php?page=account&amp;action=profile&amp;id=[@id]" method="post">
+    <ul>
+        <li>
+            <label>Username</label>
+            <input type="text" value="[@username]" disabled>
+        </li>
+        <li>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Change password">
+        </li>
+    </ul>
+    <input type="submit" value="Update Profile">
+    <p class="error">[@error]</p>
+    <button type="button" onclick="location.href= 'index.php?page=notes&amp;action=listing&amp;author=[@id]'">Find notes</button>
+
+</form>
+<p class="formHint">[@hint]</p>
